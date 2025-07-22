@@ -14,13 +14,21 @@ This extension allows users to click on any image within a webpage, automaticall
 - Overlay the translated text on the image using a transparent or styled layer
 
 ## Development Plan
+### Stage 1: Python Proof of Concept
 
-1. Set up the browser extension with image detection and click handling
-2. Integrate in-browser text extraction
-3. Add translation via a remote or local service
-4. Render overlay with the translated result on top of the image
-5. Add support for custom language selection
-6. Improve styling and positioning of the overlay
-7. Test across image formats, resolutions, and webpage layouts
+Build a simple Python script to test the key features:
+- Extract text from an image using OCR
+- Translate the text to another language
+- Overlay the translation back onto the image
+
+---
+
+### Stage 2: Browser Extension
+
+Build a Chrome extension to apply the same logic on images within webpages:
+1. Detect and handle image clicks
+2. Run OCR and translation in the browser or via an API
+3. Overlay the translated text on the image in-place
+4. Add basic UI for language selection and settings
 
 
