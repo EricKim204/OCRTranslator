@@ -32,3 +32,6 @@ Build a Chrome extension to apply the same logic on images within webpages:
 4. Add basic UI for language selection and settings
 
 
+### Stage 3: Advanced Features
+
+Mobile Support (?): React Native app for mobile browsers
