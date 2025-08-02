@@ -22,15 +22,14 @@ def draw_results(image_path, ocr_result):
     cv2.imwrite(output_path, img)
 
 # Use the lightweight PP-OCRv5 Mobile model for Japanese
-image_path = 'data/sample_jp.jpg'  # replace with your image path
+image_path = 'data/sample.jpg'  # replace with your image path
 ocr = PaddleOCR(
-    use_angle_cls=True,
+    use_textline_orientation=True,
     lang='japan',             # use 'japan' for Japanese text
-    det_db_box_thresh=0.3,    # optional tweak for detection sensitivity
-    use_gpu=False,
-    show_log=False
+    text_det_box_thresh=0.3,    # optional tweak for detection sensitivity
 )
 
-result = ocr.ocr(image_path, cls=True)
+
+result = ocr.ocr(image_path)
 draw_results(image_path, result[0])
 
