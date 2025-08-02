@@ -1,10 +1,10 @@
 # OCR Translator Extension - Git Ignore File
 
 # Ignore JPG files in data subfolder and all subdirectories
-data/**/*.jpg
-data/**/*.jpeg
-data/**/*.JPG
-data/**/*.JPEG
+data/*.jpg
+data/*.jpeg
+data/*.JPG
+data/*.JPEG
 
 # Python
 __pycache__/
